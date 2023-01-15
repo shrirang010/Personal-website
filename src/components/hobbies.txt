@@ -1,0 +1,66 @@
+Reading
+
+I read my first book in 2021 , after completing it I realized how much of an impact a good book can have
+    ps :my favourite book is The third door by Alex Banyan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div className='Hobbies-gridbox'>
+        <div id="hgriditem" className='Hobby-griditem'>
+          <div className='section1'>
+            Cycling 🚲    
+          </div> 
+          <div className='section2'>
+            <div className='subsection'>
+
+            </div>
+          </div>
+        </div>
+        
+        <div id="hgriditem" className='Hobby-griditem'>
+        <div className='section1'>
+        Listening to music🎵
+        </div>
+        <div className='section2'>
+        <div className='subsection'>
+          
+          </div>
+        </div>
+        </div>
+        
+        <div id="hgriditem" className='Hobby-griditem'>
+          <div className='section1'>
+          Reading Books
+          </div> 
+          <div className='section2'>
+              <div className='subsection'>
+              I read my first book in 2021 , after completing it I realized how much of an impact a good book can have<br/>
+              ps :my favourite book is The third door by Alex Banyan
+              </div>
+          </div>   
+        </div>
+        
+        <div id="hgriditem" className='Hobby-griditem'>
+          <div className='section1'>
+             Talking About Business strategy 
+          </div>
+          <div className='section2'>
+            <div className='subsection'>
+
+            </div>            
+          </div>
+        </div> 

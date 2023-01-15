@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap');
+.mainheading-Home{
+    color:black;
+    width:100vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #B1F7B5;
+}
+.flexbx{
+    margin-left:20em;
+    margin-top:5em;
+    /* display:flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-evenly; */
+    /* align-items: flex-start; */
+    text-align: left;
+}
+.hibox{
+    /* margin-top:0.5em; */
+    font-size: clamp(2em,100px,15em);
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+
+    animation-name: wave-animation;  
+    animation-duration: 2.5s;        
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;       
+    display: inline-block;
+       
+}
+
+.wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+    }
+    
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+    10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+    20% { transform: rotate(-8.0deg) }
+    30% { transform: rotate(14.0deg) }
+    40% { transform: rotate(-4.0deg) }
+    50% { transform: rotate(10.0deg) }
+    60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+100% { transform: rotate( 0.0deg) }
+}
+    
+.namebox1{
+    /* display: flex; */
+    /* flex-direction: column;   */
+    /* align-items: flex-start; */
+    font-weight:300;
+    font-size: clamp(3em,150px,12em);
+    text-align: left;
+}
+.name{
+    font-family: 'PT Sans Caption', sans-serif;
+}
+.namebox2{
+    display: flex;
+    flex-direction: column;  
+    align-items: flex-start;
+    font-weight: 500;
+    font-size: clamp(3em,200px,12em);
+    text-align: left;
+} 
+.infobox{
+    font-size: clamp(2em,35px,5em);
+    background: rgb(2,0,36);
+    background: linear-gradient(113deg, rgba(2,0,36,1) 0%, rgba(119,116,230,0.6824930655856092) 0%, rgba(5,109,187,1) 3%, rgba(3,95,217,1) 9%, rgba(0,212,255,1) 76%, rgba(111,127,231,0.9654062308517157) 100%); 
+    color:#ecd6d6;
+    border-radius: 35px;
+    font-family: 'Maven Pro', sans-serif;
+    height: 20%;
+    /* align-self: center; */
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+}
+.infobox p{
+margin:10px;
+text-align: center;
+}

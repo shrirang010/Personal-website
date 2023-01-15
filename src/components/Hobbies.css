@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap');
+.mainheading-Hobbies{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgb(204, 235, 204) 100%);      
+    width:100%;
+    /* height: 50%; */
+    
+}
+
+.Hobbies-gridbox{
+    /* border:12px solid ; */
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: clamp(10em,600px,40em) clamp(10em,600px,40em) clamp(10em,600px,40em);
+    grid-template-rows: clamp(3em,800px,300em) clamp(3em,600px,30em) clamp(3em,600px,30em);
+    /* gap:1.5em; */
+}
+.Hobbiesbox-textheading{
+    font-size: clamp(1em,60px,6em);
+    /* margin: 5%;    */
+    font-family: 'Kalam', cursive;
+}
+
+.hobby-griditem{
+    margin:20px;
+    background-color: rgb(22, 199, 239);
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-evenly;
+    border-radius: 20px;
+
+}
+.hobby-griditem-2{
+    margin:20px;
+    background-color: rgb(95, 120, 220);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 20px;
+}
+.hobby-imagebx,.hobby-imagebx2 {
+    height:55%;
+    border:1px transparent;
+    border-radius: 10px;
+}
+
+.hobby-imagebx img{
+    margin-top: 20px;
+    width:80%;
+    border-radius:50px;
+}
+.hobby-imagebx2 img{
+    margin-top: 20px;
+    width:80%;
+    border-radius:50px;
+}
+.hobby-textbx{
+    margin:10px 10px 10px 10px 10px; 
+    border-radius: 10px;
+    /* width:85%; */
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: 'DM Sans', sans-serif;
+}
+.hoobby-textbx-heading{
+    font-size: clamp(2em,33px,5em);
+    font-family: 'PT Sans Caption', sans-serif;
+}
+.hobby-textbx-info{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: clamp(1em,25px,45px);
+}
