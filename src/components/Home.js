@@ -7,10 +7,10 @@ export default function Home() {
         <div className='flexbx'>
             <div className="hibox">Hi ! 👋 </div>
             <div className='namebox1'>
-                <div>I'm <span className='name'>Shrirang</span></div>
+                I'm 
             </div>
             <div className='namebox2'>
-              
+            Shrirang  
             </div>
             <div className='infobox'>
                 <p>

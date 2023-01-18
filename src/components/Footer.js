@@ -9,13 +9,13 @@ export default function Footer() {
 
   // const socials = [twitter,mail, github,linkedin ];
   function onclick_emailid(){
-    let btn = document.getElementsByClassName("emailid")[0]
+    let btn = document.getElementsByClassName("emailid-btn")[0]
     btn.disabled=true
     setTimeout(function(){
       btn.disabled=false
     },1000)
     console.log("hello world")
-    let element = document.getElementsByClassName("mail-container")[0]
+    let element = document.getElementsByClassName("emailid")[0]
     let text = element.innerHTML
 
     navigator.clipboard.writeText(text)
@@ -27,7 +27,8 @@ export default function Footer() {
     popup.style.borderRadius="10px"
     popup.margin="1em"
     popup.style.fontFamily="Arial"
-    element.append(popup)
+    let mailcontainer =document.getElementsByClassName("mail-container")[0]
+    mailcontainer.append(popup)
 
     //clearing popup div
     setTimeout(function () {popup.remove()}, 1000); 
@@ -46,15 +47,20 @@ export default function Footer() {
         <div className="Socialsbox">
           <div className="mail-container">
             <div>You can reach out to me at :&nbsp;</div>  
-            <button className="emailid"onClick={onclick_emailid}>shrirangthatsit10@gmail.com<img src={clipboard} alt="" style={{width:"30px",marginLeft:"3px"}}/></button>
+            <button className="emailid-btn"onClick={onclick_emailid}>
+              <div className="emailid">shrirangthatsit10@gmail.com</div>
+              <img src={clipboard} alt="" style={{width:"30px",marginLeft:"3px"}}/>
+            </button>
           </div>
           <h2 >Socials</h2>
+          <div className="socialslist">
           { 
             sociallink.map((el) => {
                 // el is value of element in socialicons
-              return (<a href={el[1]} target ="_blank"> <img src={el[0]} alt="" style={{width:"50px"}} /></a>)
+              return (<a href={el[1]} target ="_blank" rel="noopener noreferrer"> <img src={el[0]} alt="" style={{width:"50px"}} /></a>)
             })
           }
+          </div>
         </div>
         <div className="Otherstuff-box">
           <div className="footerquote">Where there is a will there is a way !</div>

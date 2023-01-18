@@ -2,23 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap');
 .mainheading-Home{
     color:black;
-    width:100vh;
+    width:100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     background-color: #B1F7B5;
+    align-content: flex-start;
+    margin:0px 0px 0px 0px;
 }
 .flexbx{
-    margin-left:20em;
-    margin-top:5em;
-    /* display:flex; */
-    /* flex-direction: column; */
-    /* justify-content: space-evenly; */
+    /* margin-left:20em; */
+    /* margin-top:5em; */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
     /* align-items: flex-start; */
     text-align: left;
 }
 .hibox{
-    /* margin-top:0.5em; */
     font-size: clamp(2em,100px,15em);
     display:flex;
     flex-direction: column;
@@ -66,7 +67,7 @@
 .namebox2{
     display: flex;
     flex-direction: column;  
-    align-items: flex-start;
+    /* align-items: flex-start; */
     font-weight: 500;
     font-size: clamp(3em,200px,12em);
     text-align: left;
@@ -85,6 +86,61 @@
     justify-content: center;
 }
 .infobox p{
-margin:10px;
+/* margin:10px; */
 text-align: center;
+width:100%;
+}
+
+
+@media screen and (max-width:1200px){
+    .namebox1{
+        width:80%;
+        font-size:8em;
+        /* text-align: center; */
+    }
+    .namebox2{
+        width: 80%;
+        font-size:8em;
+        /* text-align: center; */
+    }
+
+}
+@media screen and (max-width:950px){
+    .flexbx{
+        justify-content: center;
+    }
+    .hibox{
+        text-align: center;
+        align-self: center;
+    }
+    .namebox1{
+        text-align: center;
+        align-self: center;
+    }
+    .namebox2{
+        text-align: center;
+        align-self: center;
+        font-size:clamp(2em,7em,10em);
+    }
+    .infobox{
+        width:100%;
+        height:20%;
+        font-size: calc(2vw + 1vh + .5vmin);
+    }
+}
+
+@media screen and (max-width:500px){
+.hibox{
+    font-size:3em;
+}
+    .namebox1{
+    font-size: 3.8em;
+}
+.namebox2{
+    font-size:5em;
+}
+.infobox{
+    align-self: center;
+    width:80%;
+}
 }
