@@ -23,6 +23,11 @@
     scroll-snap-align: start;
     scroll-snap-stop: always;
     padding:12px;
+    box-shadow: 10px 10px 0 rgba(143, 141, 136, 0.966);
+    transition: 0.2s ease-out
+}
+.journey-bx:hover{
+    box-shadow: 15px 15px 0 rgba(60, 4, 57, 0.966);
 }
 #journeybx-even{
     align-self: flex-end;

@@ -28,9 +28,10 @@
     background-color: rgb(22, 199, 239);
     display: flex;
     flex-direction: column; 
-    justify-content: space-evenly;
+    justify-content: space-between;
     border-radius: 20px;
-
+    box-shadow: 15px 5px 0 grey;
+    transition: 0.2s ease-out
 }
 .hobby-griditem-2{
     margin:20px;
@@ -39,6 +40,17 @@
     flex-direction: column;
     justify-content: space-evenly;
     border-radius: 20px;
+    box-shadow: 10px 2px 0 grey;
+}
+.hobby-griditem:hover{
+    box-shadow: 25px 15px 0 grey;
+    transform: translateY(-20px);
+}
+.hobby-griditem:hover .hobby-textbx-info{
+    /* visibility: visible; */
+    display: inline;
+    transform: translateY(-20px);
+
 }
 .hobby-imagebx,.hobby-imagebx2 {
     height:55%;
@@ -72,6 +84,9 @@
 .hobby-textbx-info{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: clamp(1em,25px,45px);
+    /* display: visibility; */
+    /* visibility: hidden; */
+    display: none;
 }
 @media screen and (max-width:950px){
     .Hobbiesbox-textheading{

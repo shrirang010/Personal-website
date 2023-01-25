@@ -26,7 +26,7 @@ export default function Hobbies() {
           </div>
         </div>
 
-        <div className='hobby-griditem-2' id="#h2" >
+        <div className='hobby-griditem' id="#h2" >
           <div className='hobby-imagebx2'>
             <img src={business} alt=""/>
           </div>

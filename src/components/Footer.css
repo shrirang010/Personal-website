@@ -32,10 +32,16 @@
     justify-content: space-between;
 }
 .emailid-btn{
-    font-size: clamp(10px,30px,50px);
+    font-size: clamp(10px,25px,50px);
     font-family: 'Tajawal', sans-serif;
     display:flex;
     flex-direction: column; 
+    box-shadow: 5px 8px 1px hsl(0, 53%, 12%);
+    transition: 0.2s ease-out
+}
+.emailid-btn:hover.emailid-btn{
+    transform: translateY(-10px);
+    box-shadow: 10px 10px 1px hsl(0, 53%, 12%);
 }
 .Socialsbox h2{
     font-family: 'Source Sans Pro', sans-serif;
@@ -63,6 +69,11 @@ width:30%;
         width:90%;
         font-size:0.7em;
         align-self: center;
+        background-color: rgb(184, 232, 180);
+        /* align-content: center; */
+    }
+    .emailid{
+        margin-left:15px;
     }
     .mail-container{
         display: flex;
