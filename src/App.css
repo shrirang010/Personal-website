@@ -36,6 +36,13 @@
     transform: rotate(360deg);
   }
 }
+/* 
+StickyContainer{
+  Sticky {
+    position: sticky;
+  }
+} */
+
 /* .navbar{
   position:fixed;
   left:20%;
@@ -44,3 +51,6 @@
 
 } */
 
+.scrollarea{
+  overflow: scroll;
+}

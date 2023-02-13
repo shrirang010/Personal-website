@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&family=Yeseva+One&display=swap');
-.navbar{
-    position:fixed;
-    left:70%;
-    bottom: 2em;
-    width:50%;  
-    transition: 0.2s ease-out;
-}
+ .navbar{
+    position:fixed; 
+    bottom:5%;
+    left: 60%;
+    right:5%;  
+} 
 .navbarbox{
     /* margin-right:0%; */
     display: flex;
@@ -20,10 +19,18 @@
     font-size:1.5rem;
     transition: 0.2s ease-out;
 }
+.navitem a{
+    text-decoration: none;
+    color:none;
+}
 .navitem {
     display: flex;
     font-family: 'PT Sans Caption', sans-serif;
-    /* font-family: 'Yeseva One', cursive; */
+    /* font-family: 'Yeseva One', cursive; */   
+}
+
+.navitem:hover {
+    cursor: pointer;
 }
 button{
     background-color: none;
@@ -44,8 +51,9 @@ img{
         font-size: 1.5rem;
         padding: 2px;
         margin:5%;
-        font-weight:900;
+        font-weight:900;    
     }
+
   }
   @media screen and (max-width:600px){
     .navbar{

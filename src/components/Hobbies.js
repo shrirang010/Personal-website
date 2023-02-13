@@ -17,7 +17,7 @@ export default function Hobbies() {
             <img src={cycle}  alt=""  />
           </div>
           <div className='hobby-textbx'>
-            <div className="hoobby-textbx-heading">
+            <div className="hobby-textbx-heading">
               Cycling
             </div>
             <div className='hobby-textbx-info'>
@@ -31,12 +31,11 @@ export default function Hobbies() {
             <img src={business} alt=""/>
           </div>
           <div className='hobby-textbx'>
-            <div className='hoobby-textbx-heading'>
+            <div className='hobby-textbx-heading'>
               Reading about Startups & Business 
             </div>
             <div className='hobby-textbx-info'>
                 Getting to know about different facets of the business world is very fascinating 
-                It helps me understand better how the large corporates function and how to run business 
             </div>
           </div>
         </div>
@@ -46,7 +45,7 @@ export default function Hobbies() {
             <img src={music}  alt=""/>
           </div>
           <div className='hobby-textbx'>
-            <div className="hoobby-textbx-heading">
+            <div className="hobby-textbx-heading">
               Listening to music & podcasts
             </div>
             <div className='hobby-textbx-info'>

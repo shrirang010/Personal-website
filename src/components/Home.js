@@ -2,7 +2,7 @@ import React from 'react'
 import  './Home.css'
 export default function Home() {
   return (
-    <div>
+    <div id="Home_cmpnt">
       <div className='mainheading-Home'>
         <div className='flexbx'>
             <div className="hibox">Hi ! 👋 </div>

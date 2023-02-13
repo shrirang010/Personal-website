@@ -45,11 +45,13 @@
 .hobby-griditem:hover{
     box-shadow: 25px 15px 0 grey;
     transform: translateY(-20px);
+    /* height: auto; */
 }
 .hobby-griditem:hover .hobby-textbx-info{
     /* visibility: visible; */
     display: inline;
     transform: translateY(-20px);
+    /* margin-bottom: 2px; */
 
 }
 .hobby-imagebx,.hobby-imagebx2 {
@@ -75,7 +77,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    font-family: 'DM Sans', sans-serif;
 }
 .hoobby-textbx-heading{
     font-size: clamp(2em,33px,5em);
@@ -90,20 +91,38 @@
 }
 @media screen and (max-width:950px){
     .Hobbiesbox-textheading{
-        font-size: clamp(2em,3em,5em);
+        font-size: 3em;
     }
-    .Hobbies-gridbox{
+    .Hobbies-gridbox{   
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        /* justify-content: space-evenly; */
         /* align-content: center; */
     }
-    .hobby-griditem,.hobby-griditem-2{
+    .hobby-griditem{
         width:70%;
         align-self: center;
     }
+     .hobby-imagebx{
+        height: 50%;
+    }
+    /* .hobby-textbx{
+        height:30% ;
+        flex-grow: 1;
+    }  */
+     /* .hobby-griditem:hover .hobby-imagebx,.hobby-imagebx2 {
+        height:30%;
+    } */
+     .hobby-griditem:hover .hobby-textbx {
+        display: block;
+    }   
+     .hobby-textbx-heading{
+        font-size: 15px;
+        margin-bottom: 2px;
+    }   
     .hobby-textbx-info{
-    font-size:1.3em;
+    font-size:15px;
+    /* margin-bottom: 2px; */
     padding:0.5em;
     }
 }

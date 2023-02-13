@@ -2,41 +2,19 @@ import React from 'react'
 import './Navbar.css'
 import { useState } from 'react'
 import navicon from '../images/navbar.png'
-export default function Navbar() {
+import PropTypes from "prop-types";
 
-  const [collapseStatus,ChangecollapseStatus]=useState("false");
+
+export default function Navbar(props) {
+
   
-
-  function ChangeNavbar()
-  {
-    let navitems=["home","Contactme","Blog"] 
-    if(collapseStatus === "true")
-    {
-      navitems.forEach((item,index)=>{
-        document.getElementById(item).style.display="flex" 
-      })
-      ChangecollapseStatus("false")
-      document.getElementsByClassName("navbarbox")[0].style.width="50%";
-      document.getElementsByClassName("navbarbox")[0].style.borderRadius="200px";
-      document.getElementsByClassName("navbarbox")[0].style.marginLeft="0%"
-    }
-    else if(collapseStatus === "false")
-    {
-      navitems.forEach((item,index)=>{
-        document.getElementById(item).style.display="none" 
-       })                                                    
-      ChangecollapseStatus("true")
-      document.getElementsByClassName("navbarbox")[0].style.width="10%"
-      document.getElementsByClassName("navbarbox")[0].style.borderRadius="40%";
-      document.getElementsByClassName("navbarbox")[0].style.marginLeft="40%"
-    }
-  }
+  // onClick = {()=> scrollto_component(Home_cmpnt)}
   return (
-    <div className='navbarbox'>
-      <div        className ='navitem'         id="home">       Home        </div>
-      <div        className ='navitem'         id="Contactme"> Contact me  </div>
-      <div        className ='navitem'         id="Blog">       Blog        </div>
-      <button onClick={ChangeNavbar} type='button'><img src={navicon} alt=""/></button>
+    <div className='navbarbox scrollarea' >
+      <div        className ='navitem'         id="home">      <button    >         Home             </button> </div>
+      <div        className ='navitem'         id="Contactme"> <button    >         Contact me       </button> </div>
+      <div        className ='navitem'         id="Blog">      <button >                                                           Blog             </button> </div>
+      <button type='button' onClick={props.ChangeNavbar}>            <img src={navicon} alt=""/>                                                                    </button>
     </div>
   )
 }

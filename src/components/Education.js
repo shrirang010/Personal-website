@@ -7,7 +7,7 @@ import nashik from "../images/Nashik.png"
 export default function Education() {
 
   return (
-      <div className='ed-box'>
+      <div className='ed-box' id='Education_cmpnt'>
         
                 <div className='ed-box-txt'> My journey So far...</div>
                 
@@ -46,4 +46,5 @@ export default function Education() {
 
       </div>
   )
+  
 }

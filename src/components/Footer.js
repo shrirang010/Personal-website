@@ -5,7 +5,8 @@ import linkedin from "../images/linkedin.png";
 import mail from "../images/mail.png";
 import github from "../images/github.png"
 import clipboard from "../images/clipboard.png"
-export default function Footer() {
+
+export default function  Footer() {
 
   // const socials = [twitter,mail, github,linkedin ];
   function onclick_emailid(){
@@ -14,7 +15,6 @@ export default function Footer() {
     setTimeout(function(){
       btn.disabled=false
     },1000)
-    console.log("hello world")
     let element = document.getElementsByClassName("emailid")[0]
     let text = element.innerHTML
 
@@ -40,9 +40,8 @@ export default function Footer() {
     linkedin :[linkedin,"https://www.linkedin.com/in/shrirang-patil-75725920b/"]
   };
   let sociallink =  Object.values(Socialobject);
-
   return (
-    <div className="footerbox">
+    <div  id="Footer_cmpnt" className="footerbox">
       <div className="sub-footerbox">
         <div className="Socialsbox">
           <div className="mail-container">
@@ -57,7 +56,7 @@ export default function Footer() {
           { 
             sociallink.map((el) => {
                 // el is value of element in socialicons
-              return (<a href={el[1]} target ="_blank" rel="noopener noreferrer"> <img src={el[0]} alt="" style={{width:"50px"}} /></a>)
+              return (<a href={el[1]} key={el[1]}target ="_blank" rel="noopener noreferrer"> <img src={el[0]} alt="" style={{width:"50px"}} /></a>)
             })
           }
           </div>
