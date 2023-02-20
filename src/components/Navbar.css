@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&family=Yeseva+One&display=swap');
- .navbar{
-    position:fixed; 
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@500&display=swap'); 
+
+.navbar{
+    position:fixed;
+    width:25vw; 
     bottom:5%;
-    left: 60%;
-    right:5%;  
+    right:1%;  
 } 
 .navbarbox{
-    /* margin-right:0%; */
+    align-self: center;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     background-color: rgb(153, 231, 231);
-    width:50%;
-    height:5vh;
+    width:100%;
     border-radius: 200px;
-    border:0.5px solid black;
     font-weight: 500;
     font-size:1.5rem;
     transition: 0.2s ease-out;
@@ -25,15 +25,16 @@
 }
 .navitem {
     display: flex;
-    font-family: 'PT Sans Caption', sans-serif;
-    /* font-family: 'Yeseva One', cursive; */   
+    font-family: 'Shantell Sans', cursive;
 }
 
 .navitem:hover {
     cursor: pointer;
 }
 button{
-    background-color: none;
+    background-color: transparent;
+    font-family: 'Shantell Sans', cursive;
+    font-size: 1.2rem;
     border:0px;
     padding: 0px;
     margin: 0px;
@@ -53,16 +54,15 @@ img{
         margin:5%;
         font-weight:900;    
     }
-
   }
   @media screen and (max-width:600px){
     .navbar{
-        left:15%;
-        width: 140%;
-        /* bottom:1vh; */
+        left  : 10vw ;
+        width : 80%  ;
+        /* bottom: 10vh  ; */
     }
-    .navitem{
-        font-size: 1rem;
+    button{
+        font-size: 1rem;        
     }
   }
   

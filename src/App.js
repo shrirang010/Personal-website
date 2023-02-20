@@ -13,7 +13,7 @@ function App() {
   const [collapseStatus,ChangecollapseStatus]=useState("false");
   const ChangeNavbar=()=>
   {
-    let navitems=["home","Contactme","Blog"] 
+    let navitems=["home","Contactme"] 
 
     if(collapseStatus === "true")
     {
@@ -21,7 +21,7 @@ function App() {
         document.getElementById(item).style.display="flex" 
       })
       ChangecollapseStatus("false")
-      document.getElementsByClassName("navbarbox")[0].style.width="50%";
+      document.getElementsByClassName("navbarbox")[0].style.width="100%";
       document.getElementsByClassName("navbarbox")[0].style.borderRadius="200px";
       document.getElementsByClassName("navbarbox")[0].style.marginLeft="0%"
     }
@@ -37,16 +37,16 @@ function App() {
     }
   }
   
-  window.addEventListener("scroll", (event) => {
-    let scroll = window.scrollY;
-    { console.log("executing...!")  
-    if(scroll < 200)
-      ChangecollapseStatus("true")
-      {ChangeNavbar()}
-    }
+  // window.addEventListener("scroll", (event) => {
+  //   let scroll = window.scrollY;
+  //   { console.log("executing...!")  
+  //   if(scroll < 200)
+  //     ChangecollapseStatus("true")
+  //     {ChangeNavbar()}
+  //   }
 
-    console.log(scroll)
-});
+  //   console.log(scroll)
+  // });
   return (
     
     <div className="App "id="holder">
