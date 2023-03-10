@@ -17,10 +17,16 @@
     grid-template-rows: clamp(3em,700px,300em) clamp(3em,600px,30em) 
 }
 .Hobbiesbox-textheading{
-    font-size: clamp(1em,60px,6em);
+    font-size: 4rem;
     font-family: 'Kalam', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.Hobbiesbox-textheading img{
+    width: 150px;
+} 
 .hobby-griditem{
     margin:20px;
     background-color: rgb(22, 199, 239);
@@ -83,7 +89,7 @@
 }
 @media screen and (max-width:950px){
     .Hobbiesbox-textheading{
-        font-size: 3em;
+        font-size: 2.5em;
     }
     .Hobbies-gridbox{   
         display: flex;

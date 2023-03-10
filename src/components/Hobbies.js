@@ -3,12 +3,15 @@ import'./Hobbies.css'
 import cycle from "../images/cycle.png"
 import business from "../images/business.jpg"
 import music from "../images/music.jpg"
-
+import hobby from "../images/hobby2.png"
 
 export default function Hobbies() {
   return (
     <div className='mainheading-Hobbies'>
-      <div className='Hobbiesbox-textheading'>Hobbies and interests</div>
+      <div className='Hobbiesbox-textheading'>
+        <img src={hobby} alt=""></img>
+        <div>Hobbies and interests</div>
+      </div>
 
       <div className='Hobbies-gridbox'>
 

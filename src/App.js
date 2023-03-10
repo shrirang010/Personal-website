@@ -2,7 +2,8 @@ import './App.css';
 import Home from './components/Home';
 import Hobbies from './components/Hobbies';
 import Footer from './components/Footer';
-import Education from './components/Education';
+import Temp from './components/Temp.js'
+// import Education from './components/Education';
 import Navbar from './components/Navbar';
 import React from 'react'
 import { useState } from 'react'
@@ -55,7 +56,8 @@ function App() {
       </div>
       <Home className="homeclass" />
       <Hobbies />
-      <Education/>
+      <Temp/>
+      {/* <Education/> */}
       <Footer />
     </div>
   
