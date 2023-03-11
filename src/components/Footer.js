@@ -8,7 +8,6 @@ import clipboard from "../images/clipboard.png"
 
 export default function  Footer() {
 
-  // const socials = [twitter,mail, github,linkedin ];
   function onclick_emailid(){
     let btn = document.getElementsByClassName("emailid-btn")[0]
     btn.disabled=true

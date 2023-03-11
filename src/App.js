@@ -2,8 +2,7 @@ import './App.css';
 import Home from './components/Home';
 import Hobbies from './components/Hobbies';
 import Footer from './components/Footer';
-import Temp from './components/Temp.js'
-// import Education from './components/Education';
+import Education from './components/Education';
 import Navbar from './components/Navbar';
 import React from 'react'
 import { useState } from 'react'
@@ -38,16 +37,6 @@ function App() {
     }
   }
   
-  // window.addEventListener("scroll", (event) => {
-  //   let scroll = window.scrollY;
-  //   { console.log("executing...!")  
-  //   if(scroll < 200)
-  //     ChangecollapseStatus("true")
-  //     {ChangeNavbar()}
-  //   }
-
-  //   console.log(scroll)
-  // });
   return (
     
     <div className="App "id="holder">
@@ -56,8 +45,7 @@ function App() {
       </div>
       <Home className="homeclass" />
       <Hobbies />
-      <Temp/>
-      {/* <Education/> */}
+      <Education/>
       <Footer />
     </div>
   

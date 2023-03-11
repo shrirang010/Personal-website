@@ -1,9 +1,6 @@
 import React from 'react'
 import './Navbar.css'
-import { useState } from 'react'
 import navicon from '../images/navbar.png'
-import PropTypes from "prop-types";
-import ScrollIntoView from 'react-scroll-into-view';
 
 
 export default function Navbar(props) {

@@ -5,7 +5,14 @@ export default function Home() {
     <div id="Home_cmpnt">
       <div className='mainheading-Home'>
         <div className='flexbx'>
-            <div className="hibox">Hi ! 👋 </div>
+            <div className="hiwave">
+             <div className='hibox'>
+              Hi ! 
+             </div>
+             <div className='wave'>
+              👋 
+             </div>
+            </div>
             <div className='namebox1'>
                 I'm 
             </div>

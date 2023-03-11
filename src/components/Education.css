@@ -1,87 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Changa+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Changa+One&family=Patrick+Hand+SC&display=swap');
-.ed-box{
+#Temp_cmpnt{
+    width:100vw;
+    background-color:#fefae0;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    padding-left:2em;
-    padding-right:2em;
-    height: 150vh;
+    justify-content: space-around;
 }
-.ed-box-txt{
-    width:80%;
-    font-size:clamp(50px,100px,200px);
-    align-self: center;
-    font-family: 'Patrick Hand SC', cursive;
+.Temp-header{
+    font-size:4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.journey-bx{
-    background-color: rgb(73, 126, 226);
-    width: 60%;
-    border-radius: 20px;
+.Temp-header img{
+    width:100px;
+}
+.Temp-header div{
+    font-family: 'Kalam', cursive;
+}
+.Temp-box{
+    display: flex;
+    flex-direction: column;  
+    justify-content: space-around;
+}
+.box-item{
+    padding:1%;
+    margin:2.5%;
+    border-radius:50px;
+    width:50%;
+    align-self:center;
     display: flex;
     justify-content: space-between;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-    padding:12px;
-    box-shadow: 10px 10px 0 rgba(143, 141, 136, 0.966);
-    transition: 0.2s ease-out
+    background-color: #bde0fe;
 }
-.journey-bx:hover{
-    box-shadow: 15px 15px 0 rgba(60, 4, 57, 0.966);
-}
-#journeybx-even{
-    align-self: flex-end;
-    flex-direction: row-reverse;
-}
-.journey-bx-txt{
-    font-size: clamp(20px,40px,80px);
-    font-family: 'Patrick Hand SC', cursive;
-    margin:auto;
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-}
-
-.journey-bx-img{
-    width:40%
-    
-}
-.journey-bx-img img{
-    width:100%;
-    height:100%;
+.circle{
+    background-color: #1d3557;
     border:2px solid black;
-    border-radius: 20px;
+    color:antiquewhite;
+    border-radius: 180px;
+    font-size: 1.5rem;
+    margin:2.5%;
+    padding: 4.5%;
+    margin-right: 0%;
+    width: 10%;
 }
-
-/* responsive css */
-@media screen and (max-width:950px){
-    .ed-box{
-        justify-content: space-evenly;
-        /* padding:0px; */
-        height:220vh;
+.rect{
+    margin:2%; 
+    align-self: center;   
+    margin-left: 0%;
+}
+.info-item{
+    font-family: 'Maven Pro', sans-serif;
+    background-color: #fff3b0;
+    font-size: 1.5rem;
+    padding:2%;
+    align-self: center ;
+    position: relative;
+    border-radius: 15px;
+}
+.line{
+    min-width:100px;
+    height:10%;
+    border:2px solid black;
+    align-self: center;
+}
+@media screen and (max-width:950px) {
+    .Temp-header{
+        font-size: 2.5rem;
     }
-    .ed-box-txt{
-    font-size: clamp(2em,3em,5em);
-    }
-    #journeybx-even{
+    .box-item{
         flex-direction: column;
-
-        /* align-self: flex-end; */
     }
-
-    #journeybx-odd{
-        flex-direction:column-reverse;
-        /* align-self:flex-start; */
-    }
-    .journey-bx-txt{
-        font-size: 2em;
-    }
-    .journey-bx-img{
-        height:30%;
+    .circle{
         width:80%;
-        align-self: center;
     }
-
+    .rect{
+        width: 90%;
+        padding: 2%;
+    }
 }
