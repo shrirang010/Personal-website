@@ -2,7 +2,7 @@
 # Project Title : Personal website
 
 ### About  :
-Hello ! This is my website  
+Hello ! This is my website ✌️
 
 
 ## Technologies used
